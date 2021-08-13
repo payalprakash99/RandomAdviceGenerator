@@ -1,0 +1,71 @@
+#root, html, body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    height: 580px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: larger;
+}
+.card{
+    background-color: #BBD3EC;
+    width: 50%;
+    height: 50%;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;    
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 2%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+.app{
+        height: 100%;
+        background:linear-gradient(rgba(248, 246, 246, 0.3),rgba(247, 246, 246, 0.3)), url(./images/pastel.jpg);
+        background-size: cover;
+        background-position:center ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+}
+.fill {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  .fill::after {
+    content: "";
+    background-color: #E0BBE4;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .fill:hover::after {
+    top: 0px;
+    left: 0px;
+  }
+    @media only screen and (max-width:600px) {
+      .card{
+          height: 30%;
+          width: 80%;
+      }
+  }
